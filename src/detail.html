@@ -1,0 +1,15 @@
+<template>
+    <section>
+        <form role="form" submit.delegate="submit()">
+            <div class="form-group">
+                <h2>${title}</h2>
+                <input required="required" type="text" value.bind="title" class="form-control" id="title" placeholder="Title....">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea required="required" value.bind="description" class="form-control" id="description" placeholder="Type a description here...."></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </section>
+</template>
